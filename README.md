@@ -24,6 +24,6 @@ npm run start
 ```
 
 #### References
-[Generics Documentations](https://www.typescriptlang.org/docs/handbook/generics.html)
-[Generics in Typescript](https://www.digitalocean.com/community/tutorials/typescript-generics-in-typescript)
-[Generics in Java](https://www.oracle.com/technical-resources/articles/java/juneau-generics.html)
+- [Generics Documentations](https://www.typescriptlang.org/docs/handbook/generics.html)
+- [Generics in Typescript](https://www.digitalocean.com/community/tutorials/typescript-generics-in-typescript)
+- [Generics in Java](https://www.oracle.com/technical-resources/articles/java/juneau-generics.html)
