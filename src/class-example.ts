@@ -1,17 +1,17 @@
 export class customArray<T> {
-    private arr: T[] = [];
+    private array: T[] = [];
 
     getItems(arr: T[]) {
-        return this.arr = arr;
+        return this.array = arr;
     }
 
     addItem(item: T) {
-        this.arr.push(item);
+        this.array.push(item);
     }
 
     removeItem(item: T) {
-        let index = this.arr.indexOf(item);
+        let index = this.array.indexOf(item);
         if (index > -1)
-            this.arr.splice(index, 1);
+            this.array.splice(index, 1);
     }
 }

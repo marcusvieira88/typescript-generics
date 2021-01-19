@@ -1,6 +1,6 @@
 import { customArray } from "./class-example";
 import { arrayAnyType, arrayGenerics } from "./array-example";
-import { testGenerics, testTyped, testAnyType, Dog, Bird } from "./inheritance-example";
+import { testGenerics, testTyped, testAnyType, Dog, Bird, Ghost } from "./inheritance-example";
 
 // GENERICS IN ARRAYS
 arrayAnyType(["AAA", "BBB", "CCC"])
@@ -8,6 +8,7 @@ arrayAnyType(["AAA", "BBB", "CCC"])
 
 arrayGenerics(["GGG", "HHH", "III"])
 arrayGenerics<Number>([12, 13, 14])
+// arrayGenerics(19) //compile error
 // arrayGenerics("It is not an array") //compile error
 
 // GENERICS IN CLASSES
@@ -20,9 +21,13 @@ stringObject.addItem('Test Generics');
 console.log(stringObject);
 
 // GENERICS IN INHERITANCE
-testGenerics(new Dog())
-testGenerics(new Bird())
 
-testTyped(new Dog())
 testAnyType(new Bird())
 // testAnyType("I'm not an animal") // runtime error
+
+testTyped(new Dog())
+// testTyped(new Ghost()) // compile error
+
+testGenerics(new Dog())
+testGenerics(new Bird())
+// testGenerics(new Ghost()) // compile error

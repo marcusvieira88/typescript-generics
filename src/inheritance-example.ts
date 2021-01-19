@@ -1,15 +1,18 @@
+export class Ghost {
+    scare() {
+        console.log(`boooooo`)
+    }
+}
 class Animal {
     eat() {
         console.log(`eating`)
     }
 }
-
 export class Dog extends Animal {
     bark() {
         console.log(`barking`)
     }
 }
-
 export class Bird extends Animal {
     fly() {
         console.log(`flying`)
@@ -31,10 +34,5 @@ export function testTyped(animal: Dog | Bird) {
 // Most flexible and scalable approach
 export function testGenerics<Y extends Animal>(animal: Y) {
     animal.eat();
-    if (animal instanceof Dog)
-        animal.bark();
-    if (animal instanceof Bird)
-        animal.fly();
-
     console.log(`testGenerics ${animal.constructor.name}`)
 }
