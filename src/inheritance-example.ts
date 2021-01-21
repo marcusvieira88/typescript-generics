@@ -19,16 +19,16 @@ export class Bird extends Animal {
     }
 }
 
-// No type-checking
-export function testAnyType(animal: any) {
-    animal.eat();
-    console.log(`testAnyType ${animal.constructor.name}`)
-}
-
 // There is type-checking but it is not scalable (if needed)
 export function testTyped(animal: Dog | Bird) {
     animal.eat();
     console.log(`testTyped ${animal.constructor.name}`)
+}
+
+// No type-checking
+export function testAnyType(animal: any) {
+    animal.eat();
+    console.log(`testAnyType ${animal.constructor.name}`)
 }
 
 // Most flexible and scalable approach

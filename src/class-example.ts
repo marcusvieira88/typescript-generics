@@ -1,8 +1,8 @@
 export class customArray<T> {
     private array: T[] = [];
 
-    getItems(arr: T[]) {
-        return this.array = arr;
+    getItems(array: T[]) {
+        return this.array = array;
     }
 
     addItem(item: T) {
